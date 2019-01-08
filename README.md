@@ -8,8 +8,8 @@ To run script upon startup
 </p>
 
 __QTI__
-7 - Left Sensor
-8 - Right Sensor
+- 7 - Left Sensor
+- 8 - Right Sensor
 
 __PWM__
 21 - PWM Left Drive
