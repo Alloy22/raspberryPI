@@ -29,8 +29,8 @@ def driving():
                 #break;
       else:
                 drive.forwardDrive()
-        time.sleep(0.01)
-        print(leftSensor + "hi" + rightSensor)
+      time.sleep(0.01)
+      print(leftSensor + "hi" + rightSensor)
 
 def wasd():
         while True:
