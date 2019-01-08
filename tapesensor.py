@@ -17,7 +17,7 @@ def irsensorL(): #function to get value from IR sensor
     if  GPIO.input(IRPINL)==0:
         pulse_end = time.time() #when it hits zero stop the stopwatch
     pulse_duration = pulse_end - pulse_start
-    #print "duration:", pulse_duration #print the time so you can adjust sensitivity
+    print "duration:", pulse_duration #print the time so you can adjust sensitivity
     if pulse_duration > 0.00042 and pulse_duration < 0.001: #adjust this value to change the sensitivity
         colour_seen = "black"
     else:
@@ -44,9 +44,9 @@ def irsensorR(): #function to get value from IR sensor
         return colour_seen
 
 def main():
-    colour_seen = irsensor1()
-    print colour_seen
-    time.sleep(0.2)
+    while(1):
+        irsensorL()
+        time.sleep(0.2)
 
 
    #GPIO.cleanup() #always good practice to clean-up the GPIO settings at the end :) tobyonlineq
