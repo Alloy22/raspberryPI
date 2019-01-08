@@ -3,4 +3,6 @@
 To run script upon startup
 > sudo nano /etc/rc.local
 
-![pinout](pi3_gpio.png)
+<p align="center">
+  <img src="pi3_gpio.png" width="350" alt="pinout">
+</p>
